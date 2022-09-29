@@ -230,3 +230,117 @@ h3 {
     margin-top: -531px;
     margin-left: 1395px;
 }
+
+/* SECTION pets */
+
+.pets {
+    margin-top: 320px;
+    height: 1106px;
+  }
+  
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .native {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000000;
+  }
+  
+  .cards {
+    width: 366px;
+    height: 426px;
+    border: 1px solid #fa6f32;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cards:hover {
+    box-shadow: 2px 2px 8px 5px #fa6f32;
+  }
+  
+  .discribe-pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 15px;
+    width: 337px;
+  }
+  
+  .cards-row-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .cards-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  .btn-arrow {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fe9013;
+    transition: 1s;
+  }
+  
+  .btn-arrow:hover {
+    background-color: #4b9200;
+    transition: 1s;
+  }
+  
+  .btn-choose {
+    width: 298px;
+    height: 54px;
+    background: #fe9013;
+    border-radius: 25px;
+    border: none;
+    margin-top: 13px;
+    transition: 1s;
+  }
+  
+  .btn-choose:hover {
+    background: #4b9200;
+    transition: 1s;
+  }
+  
+  .cards-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 61px;
+  }
+  
+  .palm {
+    margin-top: -358px;
+  }
+  
+  .stelitzia {
+    margin-top: -294px;
+    margin-left: 1232px;
+  }
