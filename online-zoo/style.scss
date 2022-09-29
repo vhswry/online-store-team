@@ -344,3 +344,289 @@ h3 {
     margin-top: -294px;
     margin-left: 1232px;
   }
+
+  /* SECTION pets */
+
+.pets {
+    margin-top: 320px;
+    height: 1106px;
+  }
+  
+  h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .native {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    color: #000000;
+  }
+  
+  .cards {
+    width: 366px;
+    height: 426px;
+    border: 1px solid #fa6f32;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cards:hover {
+    box-shadow: 2px 2px 8px 5px #fa6f32;
+  }
+  
+  .discribe-pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 15px;
+    width: 337px;
+  }
+  
+  .cards-row-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .cards-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  .btn-arrow {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fe9013;
+    transition: 1s;
+  }
+  
+  .btn-arrow:hover {
+    background-color: #4b9200;
+    transition: 1s;
+  }
+  
+  .btn-choose {
+    width: 298px;
+    height: 54px;
+    background: #fe9013;
+    border-radius: 25px;
+    border: none;
+    margin-top: 13px;
+    transition: 1s;
+  }
+  
+  .btn-choose:hover {
+    background: #4b9200;
+    transition: 1s;
+  }
+  
+  
+  
+  .cards-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 61px;
+  }
+  
+  .palm {
+    margin-top: -358px;
+  }
+  
+  .stelitzia {
+    margin-top: -294px;
+    margin-left: 1232px;
+  }
+  
+  /* SECTION pick-and-feed */
+  
+  .pick-and-feed {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        315.75deg,
+        rgba(254, 210, 144, 0.7) 30.06%,
+        #febdab 100.95%,
+        rgba(254, 210, 144, 0.7) 106.36%
+      ),
+      linear-gradient(
+        315.75deg,
+        rgba(254, 189, 171, 0.74) 30.06%,
+        rgba(243, 169, 248, 0.66) 50.74%,
+        #e0d8f0 80.49%,
+        #eaf7fe 127.9%,
+        #eaf7fe 149.54%
+      ),
+      linear-gradient(
+        315.75deg,
+        rgba(254, 189, 171, 0.74) 30.06%,
+        rgba(243, 169, 248, 0.66) 50.74%,
+        #e0d8f0 80.49%,
+        #eaf7fe 127.9%,
+        #eaf7fe 149.54%
+      );
+  
+    height: 935px;
+    padding-top: 19px;
+    padding-bottom: 50px;
+  }
+  
+  .pink-bckg {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+  
+    border-radius: 20px;
+    width: 1160px;
+    height: 835px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+  
+    text-align: center;
+  
+    color: #fe9013;
+    padding-top: 41px;
+  }
+  
+  .text-container-h5 {
+    text-align: left;
+    padding-left: 9%;
+  }
+  
+  .h3-pick-feed {
+    padding-top: 30px;
+  }
+  
+  .text-pick-feed-bold {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    color: #333b41;
+    padding-top: 42px;
+  }
+  
+  .text-pick-feed-normal {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    color: #333b41;
+    padding-top: 10px;
+    width: 836px;
+  }
+  
+  .link-support {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    color: #333b41;
+    text-decoration: underline orange 2px;
+    transition: 1s;
+  }
+  
+  .link-support:hover {
+    color: #4b9200;
+    text-decoration: underline #4b9200 2px;
+    transition: 1s;
+  }
+  
+  h6 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+    color: #333b41;
+    padding-top: 60px;
+  }
+  
+  .pay-icon {
+    background: #ffffff;
+    border: 1px solid #f9804b;
+    border-radius: 5px;
+    width: 168px;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-pay {
+    width: 168px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .how-it-works-cards {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+    padding-top: 39px;
+  }
+  
+  .vector {
+    display: flex;
+    align-self: flex-start;
+    /* gap: 44px; */
+    padding-top: 5%;
+  }
+  
+  .text-icons {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    color: #333b41;
+    text-align: start;
+  }
+  
+  .btn-feed-friend {
+    margin-top: 60px;
+  }
