@@ -168,4 +168,62 @@ h1 {
   color: #ffffff;
 }
 
+/* SECTION the-backstage */
+.the-backstage {
+  height: 403px;
+}
+
+.bamboo-cap {
+  display: flex;
+  justify-content: space-around;
+  width: 1161px;
+  height: 403px;
+  align-items: flex-start;
+  margin-left: 218px;
+  padding-top: 140px;
+  gap: 86px;
+}
+
+.discribe-backstage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+  color: #333b41;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+  color: #333b41;
+}
+
+.text-backstage {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+  color: #333b41;
+}
+
+.flower-backstage {
+  position: absolute;
+  margin-top: -531px;
+  margin-left: 1395px;
+}
+
 /*# sourceMappingURL=style.css.map */

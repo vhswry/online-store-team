@@ -127,23 +127,23 @@ h1 {
     height: 700px;
     background-position: center -80px;
     background-repeat: no-repeat;
-  }
-  
-  .big-panda {
+}
+
+.big-panda {
     margin-top: -80px;
-  }
-  
-  .orange-ellipse {
+}
+
+.orange-ellipse {
     margin-top: -929px;
     margin-left: 806px;
-  }
-  
-  .watch {
+}
+
+.watch {
     margin-top: -882px;
     margin-left: 894px;
-  }
-  
-  .btn-watch-online {
+}
+
+.btn-watch-online {
     width: 298px;
     height: 54px;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
@@ -158,10 +158,10 @@ h1 {
     &:hover {
         background: #4b9200;
         transition: 1s;
-      }
-  }
+    }
+}
 
-  .text-btn {
+.text-btn {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -170,6 +170,63 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-  }
-  
-  
+}
+
+/* SECTION the-backstage */
+
+.the-backstage {
+    height: 403px;
+}
+
+.bamboo-cap {
+    display: flex;
+    justify-content: space-around;
+    width: 1161px;
+    height: 403px;
+    align-items: flex-start;
+    margin-left: 218px;
+    padding-top: 140px;
+    gap: 86px;
+}
+
+.discribe-backstage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+    color: #333b41;
+}
+
+h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    color: #333b41;
+}
+
+.text-backstage {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    color: #333b41;
+}
+
+.flower-backstage {
+    position: absolute;
+    margin-top: -531px;
+    margin-left: 1395px;
+}
