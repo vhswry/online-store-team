@@ -258,7 +258,6 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .cards:hover {
   box-shadow: 2px 2px 8px 5px #fa6f32;
 }
@@ -302,7 +301,6 @@ h4 {
   background-color: #fe9013;
   transition: 1s;
 }
-
 .btn-arrow:hover {
   background-color: #4b9200;
   transition: 1s;
@@ -317,7 +315,6 @@ h4 {
   margin-top: 13px;
   transition: 1s;
 }
-
 .btn-choose:hover {
   background: #4b9200;
   transition: 1s;
@@ -373,7 +370,6 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .cards:hover {
   box-shadow: 2px 2px 8px 5px #fa6f32;
 }
@@ -417,7 +413,6 @@ h4 {
   background-color: #fe9013;
   transition: 1s;
 }
-
 .btn-arrow:hover {
   background-color: #4b9200;
   transition: 1s;
@@ -432,7 +427,6 @@ h4 {
   margin-top: 13px;
   transition: 1s;
 }
-
 .btn-choose:hover {
   background: #4b9200;
   transition: 1s;
@@ -530,7 +524,6 @@ h5 {
   text-decoration: underline orange 2px;
   transition: 1s;
 }
-
 .link-support:hover {
   color: #4b9200;
   text-decoration: underline #4b9200 2px;
@@ -705,7 +698,6 @@ h6 {
   position: absolute;
   transition: 1s;
 }
-
 .btn-feedback:hover {
   background: #4b9200;
   transition: 1s;
@@ -739,14 +731,10 @@ footer {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  padding-left: 1%;
 }
-
 .ellipse-icon:hover {
   background-color: #4b9200;
-}
-
-.ellipse-icon {
-  padding-left: 1%;
 }
 
 .ellipse-icon a {
@@ -762,7 +750,6 @@ footer {
   /* or 22px */
   color: #ffffff;
 }
-
 .social-icons-text:hover {
   color: #4b9200;
 }
@@ -789,7 +776,6 @@ footer {
   /* or 22px */
   color: #ffffff;
 }
-
 .text-footer-nav:hover {
   color: #f9804b;
 }
@@ -814,7 +800,6 @@ footer {
   border: none;
   transition: 1s;
 }
-
 .btn-donate:hover {
   background: #4b9200;
   transition: 1s;
@@ -844,10 +829,6 @@ footer {
   padding-top: 371px;
 }
 
-/* .flex-nav {
-    display: flex;
-    align-items: flex-end;
-  } */
 /* subscribe */
 .subscribe-container {
   display: flex;
@@ -878,7 +859,6 @@ footer {
   cursor: pointer;
   transition: 1s;
 }
-
 .designer:hover,
 .rsschool:hover {
   transition: 1s;
@@ -901,7 +881,6 @@ footer {
   height: 42px;
   transition: 0.5s;
 }
-
 .btn-submit:hover {
   border: 2px solid #4b9200;
   transition: 0.5s;
@@ -917,7 +896,6 @@ footer {
   color: #000000;
   transition: 0.5s;
 }
-
 .submit:hover {
   color: #4b9200;
   transition: 0.5s;

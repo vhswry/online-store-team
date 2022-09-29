@@ -263,10 +263,10 @@ h4 {
     border: 1px solid #fa6f32;
     border-radius: 5px;
     cursor: pointer;
-}
 
-.cards:hover {
-    box-shadow: 2px 2px 8px 5px #fa6f32;
+    &:hover {
+        box-shadow: 2px 2px 8px 5px #fa6f32;
+    }
 }
 
 .discribe-pets {
@@ -307,12 +307,14 @@ h4 {
     border-radius: 50px;
     background-color: #fe9013;
     transition: 1s;
+
+    &:hover {
+        background-color: #4b9200;
+        transition: 1s;
+    }
 }
 
-.btn-arrow:hover {
-    background-color: #4b9200;
-    transition: 1s;
-}
+
 
 .btn-choose {
     width: 298px;
@@ -322,12 +324,14 @@ h4 {
     border: none;
     margin-top: 13px;
     transition: 1s;
+
+    &:hover {
+        background: #4b9200;
+        transition: 1s;
+    }
 }
 
-.btn-choose:hover {
-    background: #4b9200;
-    transition: 1s;
-}
+
 
 .cards-btn-container {
     display: flex;
@@ -379,11 +383,13 @@ h4 {
     border: 1px solid #fa6f32;
     border-radius: 5px;
     cursor: pointer;
+
+    &:hover {
+        box-shadow: 2px 2px 8px 5px #fa6f32;
+    }
 }
 
-.cards:hover {
-    box-shadow: 2px 2px 8px 5px #fa6f32;
-}
+
 
 .discribe-pets {
     display: flex;
@@ -423,12 +429,14 @@ h4 {
     border-radius: 50px;
     background-color: #fe9013;
     transition: 1s;
+
+    &:hover {
+        background-color: #4b9200;
+        transition: 1s;
+    }
 }
 
-.btn-arrow:hover {
-    background-color: #4b9200;
-    transition: 1s;
-}
+
 
 .btn-choose {
     width: 298px;
@@ -438,11 +446,11 @@ h4 {
     border: none;
     margin-top: 13px;
     transition: 1s;
-}
 
-.btn-choose:hover {
-    background: #4b9200;
-    transition: 1s;
+    &:hover {
+        background: #4b9200;
+        transition: 1s;
+    }
 }
 
 
@@ -558,13 +566,14 @@ h5 {
     color: #333b41;
     text-decoration: underline orange 2px;
     transition: 1s;
+
+    &:hover {
+        color: #4b9200;
+        text-decoration: underline #4b9200 2px;
+        transition: 1s;
+    }
 }
 
-.link-support:hover {
-    color: #4b9200;
-    text-decoration: underline #4b9200 2px;
-    transition: 1s;
-}
 
 h6 {
     font-family: "Roboto";
@@ -749,11 +758,11 @@ h6 {
     margin-left: 219px;
     position: absolute;
     transition: 1s;
-}
 
-.btn-feedback:hover {
-    background: #4b9200;
-    transition: 1s;
+    &:hover {
+        background: #4b9200;
+        transition: 1s;
+    }
 }
 
 .leav {
@@ -785,15 +794,13 @@ footer {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.ellipse-icon:hover {
-    background-color: #4b9200;
-}
-
-.ellipse-icon {
     padding-left: 1%;
+
+    &:hover {
+        background-color: #4b9200;
+    }
 }
+
 
 .ellipse-icon a {
     margin: 0 auto;
@@ -807,11 +814,13 @@ footer {
     line-height: 140%;
     /* or 22px */
     color: #ffffff;
+
+    &:hover {
+        color: #4b9200;
+    }
 }
 
-.social-icons-text:hover {
-    color: #4b9200;
-}
+
 
 .social-icons-flex {
     display: flex;
@@ -834,11 +843,13 @@ footer {
     line-height: 140%;
     /* or 22px */
     color: #ffffff;
+
+    &:hover {
+        color: #f9804b;
+    }
 }
 
-.text-footer-nav:hover {
-    color: #f9804b;
-}
+
 
 .nav-container-footer {
     display: flex;
@@ -859,11 +870,11 @@ footer {
     border-radius: 5px;
     border: none;
     transition: 1s;
-}
 
-.btn-donate:hover {
-    background: #4b9200;
-    transition: 1s;
+    &:hover {
+        background: #4b9200;
+        transition: 1s;
+    }
 }
 
 .h1 {
@@ -889,11 +900,6 @@ footer {
 .flex-nav {
     padding-top: 371px;
 }
-
-/* .flex-nav {
-    display: flex;
-    align-items: flex-end;
-  } */
 
 /* subscribe */
 .subscribe-container {
@@ -924,12 +930,11 @@ footer {
     color: #ffffff;
     cursor: pointer;
     transition: 1s;
-}
 
-.designer:hover,
-.rsschool:hover {
-    transition: 1s;
-    color: #4b9200;
+    &:hover {
+        transition: 1s;
+        color: #4b9200;
+    }
 }
 
 .input-email {
@@ -947,11 +952,12 @@ footer {
     width: 129px;
     height: 42px;
     transition: 0.5s;
-}
 
-.btn-submit:hover {
-    border: 2px solid #4b9200;
-    transition: 0.5s;
+    &:hover {
+        border: 2px solid #4b9200;
+        transition: 0.5s;
+
+    }
 }
 
 .submit {
@@ -963,12 +969,13 @@ footer {
     /* or 22px */
     color: #000000;
     transition: 0.5s;
+
+    &:hover {
+        color: #4b9200;
+        transition: 0.5s;
+    }
 }
 
-.submit:hover {
-    color: #4b9200;
-    transition: 0.5s;
-}
 
 .footer-form {
     padding-top: 11px;
