@@ -101,6 +101,10 @@ h1 {
     font-size: 16px;
     line-height: 140%;
     color: #f9804b;
+
+    &:hover {
+        cursor: default;
+    }
 }
 
 .header-nav:hover {
@@ -257,6 +261,15 @@ h4 {
     color: #000000;
 }
 
+@keyframes zoom{
+    0%{
+        transform: scale(1.01);
+    }
+    100%{
+        transform: scale(1.01);
+    }
+}
+
 .cards {
     width: 366px;
     height: 426px;
@@ -266,6 +279,7 @@ h4 {
 
     &:hover {
         box-shadow: 2px 2px 8px 5px #fa6f32;
+        animation: 0.2s linear 0s infinite alternate zoom;
     }
 }
 
