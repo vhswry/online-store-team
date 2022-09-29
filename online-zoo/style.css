@@ -93,16 +93,10 @@ h1 {
   line-height: 140%;
   color: #ffffff;
 }
-
-.header-nav-a {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
+.header-nav.active {
   color: #f9804b;
 }
-.header-nav-a:hover {
+.header-nav.active:hover {
   cursor: default;
 }
 
@@ -468,6 +462,9 @@ h4 {
   height: 935px;
   padding-top: 19px;
   padding-bottom: 50px;
+}
+.pick-and-feed.donate {
+  height: 1481px;
 }
 
 .pink-bckg {
@@ -922,6 +919,59 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.donate .big-panda {
+  margin-top: -80px;
+}
+.donate .container-reopened {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-top: 2%;
+  padding-left: 14%;
+}
+.donate h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  /* identical to box height, or 47px */
+  color: #fe9013;
+}
+.donate .mini-panda-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+.donate .discription {
+  width: 1160px;
+  height: 94px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #ffffff;
+}
+.donate .pink-bckg {
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  width: 1160px;
+  height: 1078px;
+  margin: auto;
+  text-align: center;
+}
+.donate .wrapper-for-num {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 4%;
+  gap: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

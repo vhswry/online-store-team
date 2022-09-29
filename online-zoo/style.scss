@@ -92,19 +92,15 @@ h1 {
     font-size: 16px;
     line-height: 140%;
     color: #ffffff;
-}
 
-.header-nav-a {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    color: #f9804b;
+    &.active {
+        color: #f9804b;
 
-    &:hover {
-        cursor: default;
+        &:hover {
+            cursor: default;
+        }
     }
+
 }
 
 .header-nav:hover {
@@ -261,11 +257,12 @@ h4 {
     color: #000000;
 }
 
-@keyframes zoom{
-    0%{
+@keyframes zoom {
+    0% {
         transform: scale(1.01);
     }
-    100%{
+
+    100% {
         transform: scale(1.01);
     }
 }
@@ -510,6 +507,10 @@ h4 {
     height: 935px;
     padding-top: 19px;
     padding-bottom: 50px;
+
+    &.donate {
+        height: 1481px;
+    }
 }
 
 .pink-bckg {
@@ -1000,4 +1001,64 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.donate {
+    .big-panda {
+        margin-top: -80px;
+      }
+    .container-reopened {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        padding-top: 2%;
+        padding-left: 14%;
+    }
+
+    h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        /* identical to box height, or 47px */
+        color: #fe9013;
+    }
+
+    .mini-panda-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .discription {
+        width: 1160px;
+        height: 94px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+        color: #ffffff;
+    }
+
+    .pink-bckg {
+        background: rgba(253, 253, 255, 0.52);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        width: 1160px;
+        height: 1078px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .wrapper-for-num {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        margin-top: 4%;
+        gap: 11px;
+    }
 }
