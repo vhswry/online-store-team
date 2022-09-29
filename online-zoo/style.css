@@ -1,7 +1,126 @@
-.wrapper {
-  width: 100%;
-  min-height: 2660px;
-  background: url("./desktop_petstory.png") no-repeat top;
+* {
+  font-family: "Roboto";
+}
+
+:root {
+  --container-width: 1600px;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+body {
+  max-width: var(--container-width);
+}
+
+.header-container {
+  max-width: 100%;
+  height: 80px;
+  background-color: black;
+  position: relative;
+}
+
+.main-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-center-header {
+  max-width: 1160px;
+  height: 100%;
+  margin: auto;
+  padding-top: 13px;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+  height: 100%;
+}
+
+.logo {
+  width: 82px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.logo-bamboo {
+  margin-top: -44px;
+  margin-left: 8px;
+}
+
+.logo-btn-icons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  padding-top: 40px;
+}
+
+.container-nav {
+  display: flex;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+}
+
+h1 {
+  width: 72.49px;
+  height: 44.91px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  /* or 23px */
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #ffffff;
+}
+
+.header-nav-a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #f9804b;
+}
+
+.header-nav:hover {
+  color: #f9804b;
+}
+
+.design-link-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #ffffff;
+}
+.design-link-header:hover {
+  color: #4b9200;
 }
 
 /*# sourceMappingURL=style.css.map */
