@@ -271,7 +271,6 @@ h4 {
     transform: translateY(-47px);
   }
 }
-
 @keyframes zoom {
   to {
     transform: scale(1.1);
@@ -972,6 +971,12 @@ footer {
   margin-left: 20%;
   margin-top: 4%;
   gap: 11px;
+}
+
+@media (max-width: 640px) {
+  .container-nav a {
+    color: red !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

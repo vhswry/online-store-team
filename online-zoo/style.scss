@@ -1069,3 +1069,11 @@ footer {
         gap: 11px;
     }
 }
+
+@media (max-width: 640px) { 
+    .container-nav{
+        a{
+            color: red !important;
+        }
+    }
+ }
