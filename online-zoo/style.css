@@ -973,9 +973,132 @@ footer {
   gap: 11px;
 }
 
+.container-nav {
+  display: none;
+}
+.container-nav .nav-btn {
+  display: none;
+}
+.container-nav .design {
+  display: none;
+}
+
+.nav-enabler,
+.nav-btn {
+  display: none;
+  z-index: 9999;
+}
+
 @media (max-width: 640px) {
+  .header-container {
+    max-height: 34px;
+  }
+  .wrapper-center-header {
+    padding-top: 0;
+  }
+  .logo {
+    width: 47px;
+    height: 30px;
+    font-size: 13px;
+    z-index: 9999;
+    color: #FE9013;
+  }
+  .nav-btn {
+    display: block;
+    order: 2;
+    width: 24px;
+    height: 22px;
+    background-color: #111115;
+    border: 0;
+    padding: 3px;
+  }
+  .nav-btn label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+  .nav-btn label span {
+    max-height: 33%;
+    background-color: white;
+    height: 2px;
+    border-radius: 2px;
+  }
+  .main-header-container {
+    width: 100%;
+    height: inherit;
+  }
+  .logo-nav-container {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .nav-enabler:checked ~ .container-nav {
+    display: flex;
+  }
+  .nav-enabler:checked ~ .nav-btn + div {
+    z-index: 99999;
+  }
+  .nav-enabler:checked ~ .nav-btn + div .logo {
+    border-color: #FE9013;
+    background: url("./assets/icons/bamboo.png");
+    background-repeat: no-repeat;
+    background-position: 20% 60%;
+  }
+  .nav-enabler:checked ~ .nav-btn + div .logo h1 {
+    z-index: 99999;
+    color: #FE9013;
+  }
+  .nav-enabler:checked ~ .nav-btn + div .logo a {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-enabler:checked ~ .nav-btn + div .logo .logo-bamboo {
+    display: none;
+  }
+  .nav-enabler ~ .nav-btn + div {
+    z-index: 99999;
+    margin-left: 10px;
+  }
+  .nav-enabler ~ .nav-btn + div .logo h1 {
+    font-size: 15px;
+    height: inherit;
+    width: inherit;
+  }
+  .nav-enabler ~ .nav-btn + div .logo a {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-container {
+    max-width: 320px;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .container-nav {
+    padding-top: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    min-height: 330px;
+  }
   .container-nav a {
-    color: red !important;
+    color: #333B41;
+  }
+  .container-nav .design {
+    display: block;
+  }
+  .design-link-header {
+    display: none;
   }
 }
 
