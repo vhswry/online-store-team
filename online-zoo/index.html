@@ -15,6 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script>
+        window.addEventListener('load', function(e){
+            let menuInput = document.getElementById("nav-enabler");
+            menuInput.addEventListener('change',function(e){
+                e.target.checked ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
+            })
+
+        })
+    </script>
 </head>
 
 <body>
@@ -24,25 +33,24 @@
                 <div class="main-header-container">
                     <div class="logo-nav-container">
                         <input type="checkbox" name="nav-enabler" id="nav-enabler" class="nav-enabler">
-                            <button class="nav-btn">
-                                <label for="nav-enabler">
-                                    <span class="line one">&nbsp;</span>
-                                    <span class="line two">&nbsp;</span>
-                                    <span class="line thre">&nbsp;</span>
-                                </label>
-                            </button>
-                        <div>
-                            <a href="index.html#about">
-                            </a>
-                            <div class="logo"><a href="#about">
-                                    <h1>PetStory online</h1>
-                                </a>
-                                <a href="#about"><img class="logo-bamboo" src="./assets/images/bamboo.png"
-                                        alt="bamboo"></a>
-                            </div>
-                        </div>
+                        <button class="nav-btn">
+                            <label for="nav-enabler">
+                                <span class="line one">&nbsp;</span>
+                                <span class="line two">&nbsp;</span>
+                                <span class="line thre">&nbsp;</span>
+                            </label>
+                        </button>
                         <nav class="container-nav">
                             <ul class="nav-container">
+                                <li>
+
+                                    <div class="logo"><a href="#about">
+                                            <h1>PetStory online</h1>
+                                        </a>
+                                        <a href="#about"><img class="logo-bamboo" src="./assets/images/bamboo.png"
+                                                alt="bamboo"></a>
+                                    </div>
+                                </li>
                                 <li id="about">
                                     <a class="header-nav active" href="#about">About</a>
                                 </li>
@@ -59,14 +67,17 @@
                                     <a class="header-nav" href="#contact">Contact
                                         us</a>
                                 </li>
+                                <li>
+
+                                    <a class="design-link-header"
+                                        href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">
+                                        Designed by ©
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
                     </div>
-                    <a class="design-link-header"
-                        href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">
-                        Designed by ©
-                    </a>
                 </div>
             </div>
         </div>
@@ -75,7 +86,7 @@
     <main>
 
         <section class="favorite-animal">
-            <img class="big-panda" src="./assets/images/Panda.jpg" alt="panda">
+            <!-- <img class="big-panda" src="./assets/images/Panda.jpg" alt="panda"> -->
             <img class="orange-ellipse" src="./assets/images/Ellipse.png" alt="ellipse">
             <img class="watch" src="./assets/images/Watch-text.png" alt="text">
 
@@ -120,12 +131,15 @@
             <div class="cards-btn-container">
                 <div class="cards-container">
 
-                    <button class="btn-arrow">
-                        <img src="./assets/icons/arrow-right.png" alt="arrow" width="16" height="8">
-                    </button>
-
                     <div>
+                        <button class="btn-arrow right">
+                            <img src="./assets/icons/arrow-right.png" alt="arrow" width="16" height="8">
+                        </button>
+                        <button class="btn-arrow left">
+                            <img src="./assets/icons/arrow-left.png" alt="arrow" width="16" height="8">
+                        </button>
                         <div class="cards">
+
                             <div class="card">
                                 <div class="img"><img src="./assets/images/pandas_1.jpg" alt="pandas"></div>
                                 <div class="discribe-pets">
@@ -192,10 +206,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <button class="btn-arrow">
-                        <img src="./assets/icons/arrow-left.png" alt="arrow" width="16" height="8">
-                    </button>
                 </div>
                 <button class="btn-choose">
                     <span class="text-btn">choose your favorite</span>
@@ -377,67 +387,68 @@
     </main>
 
     <footer id="contact">
-        <div class="logo-btn-icons-container">
-            <a href="#about">
-                <div class="logo">
-                    <p class="h1">PetStory online</p>
-                    <img class="logo-bamboo" src="./assets/images/bamboo.png" alt="bamboo">
-                </div>
-            </a>
-            <a href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/online-zoo/pages/donate/index.html">
+        <div>
+            <div class="logo-btn-icons-container">
+                <a href="#about">
+                    <div class="logo">
+                        <p class="h1">PetStory online</p>
+                        <img class="logo-bamboo" src="./assets/images/bamboo.png" alt="bamboo">
+                    </div>
+                </a>
+                <a
+                    href="https://rolling-scopes-school.github.io/iniuta-JSFEPRESCHOOL/online-zoo/pages/donate/index.html">
 
-                <button class="btn-donate">
-                    <p class="text-btn">DONATE FOR VOLUNTEERS</p>
-                </button>
-            </a>
-            <div class="social-icons-container">
-                <div class="social-icons-flex">
-                    <div class="ellipse-icon">
-                        <a class="footer-vector"
+                    <button class="btn-donate">
+                        <p class="text-btn">DONATE FOR VOLUNTEERS</p>
+                    </button>
+                </a>
+                <div class="social-icons-container">
+                    <div class="social-icons-flex">
+                        <div class="ellipse-icon">
+                            <a class="footer-vector"
+                                href="https://www.facebook.com/watch/?ref=search&amp;v=846212998834759&amp;external_log_id=a0302f69-3128-4cce-881a-801a68d36809&amp;q=spase%20cats">
+                                <img class="social-icons" src="./assets/icons/F.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <a
                             href="https://www.facebook.com/watch/?ref=search&amp;v=846212998834759&amp;external_log_id=a0302f69-3128-4cce-881a-801a68d36809&amp;q=spase%20cats">
-                            <img class="social-icons" src="./assets/icons/F.svg" alt="facebook">
+                            <p class="social-icons-text">Facebook</p>
                         </a>
                     </div>
-                    <a
-                        href="https://www.facebook.com/watch/?ref=search&amp;v=846212998834759&amp;external_log_id=a0302f69-3128-4cce-881a-801a68d36809&amp;q=spase%20cats">
-                        <p class="social-icons-text">Facebook</p>
-                    </a>
-                </div>
-                <div class="social-icons-flex">
-                    <div class="ellipse-icon">
-                        <a class="footer-vector" href="https://twitter.com/i/flow/login">
-                            <img class="social-icons" src="./assets/icons/T.svg" alt="twitter">
-                        </a>
-                    </div>
+                    <div class="social-icons-flex">
+                        <div class="ellipse-icon">
+                            <a class="footer-vector" href="https://twitter.com/i/flow/login">
+                                <img class="social-icons" src="./assets/icons/T.svg" alt="twitter">
+                            </a>
+                        </div>
 
-                    <a href="https://twitter.com/i/flow/login">
-                        <p class="social-icons-text">Twitter</p>
-                    </a>
-                </div>
-                <div class="social-icons-flex">
-                    <div class="ellipse-icon">
-                        <a class="footer-vector" href="https://www.instagram.com/p/Ch6aeRoDXYu/">
-                            <img class="social-icons" src="./assets/icons/I.svg" alt="instagram">
+                        <a href="https://twitter.com/i/flow/login">
+                            <p class="social-icons-text">Twitter</p>
                         </a>
                     </div>
-                    <a href="https://www.instagram.com/p/Ch6aeRoDXYu/">
-                        <p class="social-icons-text">Instagram</p>
-                    </a>
-                </div>
-                <div class="social-icons-flex">
-                    <div class="ellipse-icon">
-                        <a class="footer-vector"
-                            href="https://www.youtube.com/watch?v=t-NUBR2kufw&amp;list=OLAK5uy_kEcSS0IizYOnBcB1V0EpkFWVo87eAtFFw&amp;index=2"><img
-                                class="social-icons" src="./assets/icons/Y.svg" alt="YouTube"></a>
+                    <div class="social-icons-flex">
+                        <div class="ellipse-icon">
+                            <a class="footer-vector" href="https://www.instagram.com/p/Ch6aeRoDXYu/">
+                                <img class="social-icons" src="./assets/icons/I.svg" alt="instagram">
+                            </a>
+                        </div>
+                        <a href="https://www.instagram.com/p/Ch6aeRoDXYu/">
+                            <p class="social-icons-text">Instagram</p>
+                        </a>
                     </div>
-                    <a
-                        href="https://www.youtube.com/watch?v=t-NUBR2kufw&amp;list=OLAK5uy_kEcSS0IizYOnBcB1V0EpkFWVo87eAtFFw&amp;index=2">
-                        <p class="social-icons-text">YouTube</p>
-                    </a>
+                    <div class="social-icons-flex">
+                        <div class="ellipse-icon">
+                            <a class="footer-vector"
+                                href="https://www.youtube.com/watch?v=t-NUBR2kufw&amp;list=OLAK5uy_kEcSS0IizYOnBcB1V0EpkFWVo87eAtFFw&amp;index=2"><img
+                                    class="social-icons" src="./assets/icons/Y.svg" alt="YouTube"></a>
+                        </div>
+                        <a
+                            href="https://www.youtube.com/watch?v=t-NUBR2kufw&amp;list=OLAK5uy_kEcSS0IizYOnBcB1V0EpkFWVo87eAtFFw&amp;index=2">
+                            <p class="social-icons-text">YouTube</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav-subscribe-container">
             <nav class="flex-nav">
                 <ul class="nav-container-footer">
                     <li>
