@@ -65,15 +65,14 @@ window.addEventListener('load', function (e) {
         popupContainer.appendChild(contentNode);
     }
     
-        let testimonials = document.querySelector('div.user-cards-container');
-        if(testimonials){
-            Array.from(testimonials.childNodes).filter((el) => el.classList)
-            .map((el)=>{
-                el.addEventListener('click', (e) => {
-                    assignPopupContent(el.cloneNode(true));
-                    enablePopUp();
-                })
+    let testimonials = document.querySelector('div.user-cards-container');
+    if(testimonials){
+        Array.from(testimonials.childNodes).filter((el) => el.classList)
+        .map((el)=>{
+            el.addEventListener('click', (e) => {
+                assignPopupContent(el.cloneNode(true));
+                enablePopUp();
             })
-        }
-    
+        })
+    }    
 })

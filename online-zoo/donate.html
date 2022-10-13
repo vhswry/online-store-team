@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="./script.js"></script>
+    <script src="./donate.js"></script>
 </head>
 
 <body>
@@ -127,7 +128,7 @@
                     <div class="nav-amount">
                         <form class="amount-form">
                             <fieldset id="range-group" class="range-group">
-                              <input class="active" type="radio" value="$2000" name="group1" checked>
+                              <input type="radio" value="$2000" name="group1" >
                               <input type="radio" value="$1000" name="group1">
                               <input type="radio" value="$500" name="group1">
                               <input type="radio" value="$250" name="group1">
@@ -136,7 +137,7 @@
                               <input type="radio" value="$25" name="group1">
                             </fieldset>
                             <p class="another-amount">
-                              <input type="text" placeholder="Another amount" name="another-amount" id="another-amount" value="2000">
+                              <input type="text" placeholder="Another amount" name="another-amount" id="another-amount" value="" maxlength="4">
                             </p>
                             <fieldset id="pay-interval-select" class="pay-interval-select">
                                 <label><input type="radio" value="Monthly" name="group2">Monthly</label>
