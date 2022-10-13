@@ -52,6 +52,7 @@ body > footer{
 }
 
 .wrapper-center-header {
+    box-sizing: border-box;
     max-width: 1160px;
     height: 100%;
     margin: auto;
@@ -331,7 +332,10 @@ h2+.text-backstage {
     z-index: -1;
     width: 12.6%;
 }
-
+main > section:not(:first-child){
+    padding-left: 30px;
+    padding-right: 30px;
+}
 @media (max-width: 1000px) {
     .flower-backstage{
         display: none;
@@ -339,13 +343,11 @@ h2+.text-backstage {
     main > section:not(:first-child){
         padding-left: 30px;
         padding-right: 30px;
-        overflow-x: hidden;
     }
-    footer, header{
-        overflow-x: hidden;
+    footer, footer *{
+        box-sizing: border-box;
     }
     header{
-        overflow-y: hidden;
     }
 }
 
@@ -418,6 +420,7 @@ h4 {
     column-gap: 27px;
     row-gap: 20px;
     overflow-x: hidden;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -432,6 +435,7 @@ h4 {
     height: auto;
     padding-bottom: 15px;
     box-sizing: border-box;
+    min-width: 285px;
 
     .img img {
         width: 100%;
@@ -490,7 +494,7 @@ h4 {
 }
 
 
-@media (max-width: 1580px) {
+@media (max-width: 1000px) {
     .cards{
         row-gap: 90px;
     }
@@ -776,7 +780,6 @@ h6 {
 /* SECTION testimonials */
 
 .testimonials {
-    background-color: var(--white);
     position: relative;
     padding-bottom: 262px;
 }
@@ -911,7 +914,7 @@ h6 {
     margin: 0;
     position: absolute;
     right: 0;
-    bottom: -134px;
+    bottom: 0;
 }
 
 /* FOOTER */
@@ -1047,7 +1050,7 @@ footer {
 
 .flex-nav {
     width: 100%;
-    min-width: 362px;
+    max-width: 362px;
     padding: 0;
     align-self: flex-end;
     margin-left: 101px;
