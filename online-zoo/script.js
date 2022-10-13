@@ -16,7 +16,10 @@ window.addEventListener('load', function (e) {
 
     main.addEventListener('click', function (e) {
         if (document.body.style.overflowY == 'hidden') {
+            document.body.style.overflowY = '';
+            main.style.filter = ''
             menuInput.checked = false;
+            enableScroll();
         } 
     })
 
@@ -57,31 +60,20 @@ window.addEventListener('load', function (e) {
     
     //////
 
-
-
-
-
     let assignPopupContent = (contentNode) => {
         popupContainer.innerHTML = '';
         popupContainer.appendChild(contentNode);
     }
-
-    // assignPopupContent(document.createTextNode('assignPopupContent').cloneNode(true))
-    // let test = document.querySelector('.user-cards-container .gradient');
-    // assignPopupContent(test.cloneNode(true))
-    // enablePopUp();
-
-    let testimonials = document.querySelector('div.user-cards-container');
-
-    Array.from(testimonials.childNodes).filter((el) => el.classList)
-    .map((el)=>{
-        el.addEventListener('click', (e) => {
-            assignPopupContent(el.cloneNode(true));
-            enablePopUp();
-        })
-    })
-    // testimonials.addEventListener('click', function(e){
-    //     if(e.target)
-    // })
+    
+        let testimonials = document.querySelector('div.user-cards-container');
+        if(testimonials){
+            Array.from(testimonials.childNodes).filter((el) => el.classList)
+            .map((el)=>{
+                el.addEventListener('click', (e) => {
+                    assignPopupContent(el.cloneNode(true));
+                    enablePopUp();
+                })
+            })
+        }
     
 })

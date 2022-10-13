@@ -1464,3 +1464,36 @@ footer {
         margin: auto;
     }
 }
+
+.range-group{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+    * {
+    box-sizing: border-box;
+    }
+    input.active, input:hover{
+        outline: 5px solid var(--Orang);
+        border-radius: 10px;
+    }
+     
+    input[type="radio"]{
+        position: relative;
+
+        
+
+        &::after{
+            padding-top: 15px;
+            position: absolute;
+            content: attr(value);
+            width: auto;
+            height: auto;
+            display: inline-flex;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

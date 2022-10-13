@@ -1288,4 +1288,33 @@ g .btn-submit:hover {
   margin: auto;
 }
 
+.range-group {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  min-height: 40px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.range-group * {
+  box-sizing: border-box;
+}
+.range-group input.active, .range-group input:hover {
+  outline: 5px solid var(--Orang);
+  border-radius: 10px;
+}
+.range-group input[type=radio] {
+  position: relative;
+}
+.range-group input[type=radio]::after {
+  padding-top: 15px;
+  position: absolute;
+  content: attr(value);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*# sourceMappingURL=style.css.map */
