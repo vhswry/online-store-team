@@ -1264,5 +1264,28 @@ g .btn-submit:hover {
     display: none;
   }
 }
+.popupContainer {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: red;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background: var(--Frosted_glass_white-2);
+  opacity: 0.85;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+.popupContainer.active {
+  display: flex;
+}
+.popupContainer.active > * {
+  margin: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
