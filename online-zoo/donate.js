@@ -1,16 +1,34 @@
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
 
     let anotherAmount = document.getElementById('another-amount');
     let rangeGroup = document.getElementById('range-group');
     let ranges = Array.from(rangeGroup.childNodes).filter((el) => el.value)
     let active = 4;
-    ranges[active].classList.add('active')
-    ranges.map((el)=>{
-            el.addEventListener('click', (e) => {
-                ranges[active].classList.remove('active')
-                anotherAmount.value = e.target.value.slice(1)
-                active = ranges.indexOf(e.target)
-            })
-        });
+    ranges[active].classList.add('active');
+
+    ranges.map((el) => {
+        el.addEventListener('click', (e) => {
+            anotherAmount.value = e.target.value.slice(1)
+            ranges[active].classList.remove('active')
+            active = ranges.indexOf(e.target)
+            ranges[active].classList.add('active')
+        })
+    });
+    let values = ranges.map(r => r.value)
+    anotherAmount.addEventListener('input', function(e){
+        if(e.target.value.lenght > 4){
+            e.preventDefault();
+        }
+        let search = '$' + e.target.value;
+        let idPresent = values.indexOf(search);
+        if(~idPresent){
+            ranges[active].classList.remove('active')
+            active = idPresent;
+            ranges[active].classList.add('active')
+        } else{
+            ranges[active].classList.remove('active')
+        } 
+    })    
+
 })
 

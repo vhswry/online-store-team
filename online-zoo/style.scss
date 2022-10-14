@@ -1497,3 +1497,20 @@ footer {
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .range-group{
+        input:first-child{
+            display: none;
+        }
+    }
+    
+}
+@media (max-width: 640px) {
+    .range-group{
+        input:nth-child(2){
+            display: none;
+        }
+    }
+    
+}
