@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
     let rangeGroup = document.getElementById('range-group');
     let ranges = Array.from(rangeGroup.childNodes).filter((el) => el.value)
     let active = 4;
-    ranges[active].classList.add('active');
 
     ranges.map((el) => {
         el.addEventListener('click', (e) => {
@@ -25,8 +24,10 @@ window.addEventListener("load", function () {
             ranges[idPresent].click();
         } else{
             ranges[active].classList.remove('active')
+            ranges[active].checked = false;
         } 
-    })    
+    }) 
+    ranges[active].click();  
 
 })
 
