@@ -22,9 +22,7 @@ window.addEventListener("load", function () {
         let search = '$' + e.target.value;
         let idPresent = values.indexOf(search);
         if(~idPresent){
-            ranges[active].classList.remove('active')
-            active = idPresent;
-            ranges[active].classList.add('active')
+            ranges[idPresent].click();
         } else{
             ranges[active].classList.remove('active')
         } 
