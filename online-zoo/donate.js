@@ -15,8 +15,8 @@ window.addEventListener("load", function () {
     });
     let values = ranges.map(r => r.value)
     anotherAmount.addEventListener('input', function(e){
-        if(e.target.value.lenght > 4){
-            e.preventDefault();
+        if (this.value.length > 4) {
+            this.value = this.value.slice(0,4); 
         }
         let search = '$' + e.target.value;
         let idPresent = values.indexOf(search);
