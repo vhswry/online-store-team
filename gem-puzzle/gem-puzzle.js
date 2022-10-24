@@ -34,6 +34,17 @@ let movesLabel, timeLabel;
 let selectedSizeLabel;
 let counterId;
 let emptyPos, movePos;
+let directions = {
+    '10': 'left',
+    '-10': 'right',
+    '01': 'top',
+    '0-1': 'bottom',
+    'bottom': 'top',
+    'top': 'bottom',
+    'left': 'right',
+    'right': 'left',
+};
+let isStillInMove = false;
 
 function setupBoard() {
     board = document.getElementById('board');
@@ -81,7 +92,9 @@ function isCanMove(to) {
     let _movePos = to ? to : movePos;
     let xTry = Math.abs(emptyPos.x - _movePos.x)
     let yTry = Math.abs(emptyPos.y - _movePos.y)
-    if ((xTry == 0 && yTry === 1) || (xTry == 1 && yTry === 0)) {
+    let _xTry = Math.abs(xTry)
+    let _yTry = Math.abs(yTry)
+    if ((_xTry == 0 && _yTry === 1) || (_xTry == 1 && _yTry === 0)) {
         console.log('can move')
         return true;
     } else {
@@ -89,12 +102,31 @@ function isCanMove(to) {
         return false;
     }
 }
+function getDirection() {
+    let xTry = emptyPos.x - movePos.x
+    let yTry = emptyPos.y - movePos.y
+    let direction = directions[`${xTry}${yTry}`]
+    direction = directions[direction];
+    return `to-${direction}`;
+}
 function swapCells() {
-    Tools.swap(movePos.el, emptyPos.el)
+    let direction = getDirection()
+    let el = movePos.el;
+    isStillInMove = true;
+    el.classList.add(direction)
+    setTimeout(() => {
+        Tools.swap(movePos.el, emptyPos.el)
+        el.classList.remove(direction);
+        isStillInMove = false;
+    }, 1000)
     let tmp = movePos;
     movePos = emptyPos;
     emptyPos = tmp;
-    console.log('SWAP!!!!');
+    // console.log('SWAP!!!!');
+    /////.//
+    /////.//
+    /////.//
+
 }
 function init() {
     setupBoard();
@@ -125,7 +157,7 @@ function init() {
                 /////.//
                 /////.//
                 console.log();
-            }, 1000)
+            }, 400)
         }
     })
 
@@ -141,7 +173,7 @@ function init() {
         /////.//
         /////.//
         let el = e.target
-        if (el.classList.contains('cell')) {
+        if (!isStillInMove && el.classList.contains('cell')) {
             calcZeroPos();
             let clickPos = calcPos(el)
             if (isCanMove(clickPos)) {
