@@ -163,19 +163,27 @@ button.stop{
         // }
     }
 
+    &.empty{
+        pointer-events: none;
+        border-color: transparent;
+    }
     &:hover{
-        transition: 0.25s all;
+        transition: 0.15s all;
+    }
+    &:not(.empty):hover{
         background-color: lightgreen;
     }
+
+
 }
 
 
-.row .cell:last-child{
-    border-right: 1px solid gray;
-}
-.row:last-child .cell{
-    border-bottom: 1px solid gray;
-}
+// .row .cell:last-child{
+//     border-right: 1px solid gray;
+// }
+// .row:last-child .cell{
+//     border-bottom: 1px solid gray;
+// }
 
 .popup {
     display: flex;

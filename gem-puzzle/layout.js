@@ -9,7 +9,7 @@ function initLayout() {
         </div>
         <div class="status">
             <span class="moves">Moves: <span id="moves">0</span></span>  
-            <span class="time">Time: <span id="time">00:00</span></span>
+            <span class="time">Time: <span id="time">00:00:00</span></span>
         </div>
     </div>
     <div class="board" id="board">

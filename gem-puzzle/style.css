@@ -1,7 +1,31 @@
+:root {
+  --drag-x: calc(100% + 10px);
+  --drag-y: calc(100% + 30px);
+  --color-active: #169294;
+  --color-gray: gray;
+}
+
 * {
   box-sizing: border-box;
   /* font-weight: 600; */
 }
+
+.cell.dragged:before {
+  position: absolute;
+  content: attr(data-value);
+  color: gray;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* transform: translateX(calc(100% + 10px)); */
+  transform: translate(var(--drag-y), var(--drag-x));
+  pointer-events: none;
+  border: inherit;
+  border-color: gray;
+}
+
 
 body {
   margin: 0;
@@ -32,13 +56,14 @@ body {
 }
 
 .buttons button {
-  background-color: #169294;
+  background-color: var(--color-active);
   border: 0;
   color: white;
   border-radius: 5px;
   padding: 7px;
   cursor: pointer;
   font-size: 14px;
+  min-width: 70px;
 }
 
 button.stop {
@@ -46,7 +71,7 @@ button.stop {
 }
 
 .stop.active {
-  background-color: #169294;
+  background-color: var(--color-active);
 }
 
 .stop:not(.active) {
@@ -72,7 +97,7 @@ button.stop {
   font-size: 1.25em;
 }
 
-.status span > span {
+.status span>span {
   margin: 0 5px;
   font-size: 1.25em;
 }
@@ -100,7 +125,8 @@ button.stop {
   color: cornflowerblue;
 }
 
-.other-size, .selected-size {
+.other-size,
+.selected-size {
   font-size: 12px;
   margin: 0;
   text-align: center;
@@ -127,37 +153,42 @@ button.stop {
   color: black;
   position: relative;
 }
+
 .cell.to-top {
   color: transparent;
   color: black;
   transform: translateY(calc(-100% - 10px));
 }
+
 .cell.to-bottom {
   color: transparent;
   color: black;
   transform: translateY(calc(100% + 10px));
 }
+
 .cell.to-left {
   color: transparent;
   color: black;
   transform: translateX(calc(-100% - 10px));
 }
+
 .cell.to-right {
   color: transparent;
   color: black;
   transform: translateX(calc(100% + 10px));
 }
+
+.cell.empty {
+  pointer-events: none;
+  border-color: transparent;
+}
+
 .cell:hover {
-  transition: 0.25s all;
+  transition: 0.15s all;
+}
+
+.cell:not(.empty):hover {
   background-color: lightgreen;
-}
-
-.row .cell:last-child {
-  border-right: 1px solid gray;
-}
-
-.row:last-child .cell {
-  border-bottom: 1px solid gray;
 }
 
 .popup {
@@ -173,3 +204,25 @@ button.stop {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 320px) {
+
+  .cell {
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cell {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cell {
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
