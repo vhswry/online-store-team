@@ -1,0 +1,25 @@
+{
+  "name": "songbird",
+  "version": "1.0.0",
+  "description": "Songbird is a quiz app for recognizing birds by their voices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/vhswry-JSFE2022Q3.git#songbird"
+  },
+  "keywords": [
+    "quiz",
+    "songbird",
+    "birds",
+    "voices"
+  ],
+  "author": "vhswry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/vhswry-JSFE2022Q3/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/vhswry-JSFE2022Q3/tree/songbird#readme"
+}
