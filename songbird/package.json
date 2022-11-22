@@ -4,7 +4,8 @@
   "description": "Songbird is a quiz app for recognizing birds by their voices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git checkout gh-pages && git merge songbird && git push && git checkout songbird"
   },
   "repository": {
     "type": "git",
