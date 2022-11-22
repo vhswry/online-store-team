@@ -1,0 +1,25 @@
+ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 1.75rem;
+  justify-content: center;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+a:active, a:target, a:hover{
+  color: red;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+footer a img{
+ max-width: 50vw;
+ max-height: 5vh;
+}
