@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const n=document.getElementById("root");n&&(n.innerHTML=`<p>${function(n="You"){return`Hello World and ${n}!`}()}</p>`)}()})();
